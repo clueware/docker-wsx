@@ -1,0 +1,13 @@
+#!/usr/bin/expect -f
+
+spawn passwd wsx
+
+expect "Enter new UNIX password"
+
+send "wsx\r"
+
+expect "Retype new UNIX password"
+
+send "wsx\r"
+
+expect "password updated successfully"
