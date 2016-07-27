@@ -13,6 +13,8 @@ RUN pip install pyepoll
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get purge -y python-dev python-pip
 
+RUN chmod a+x /tmp/VMware-WSX-1.0.2-928297.x86_64.bundle
+
 RUN expect /tmp/install_wsx.expect
 
 RUN /etc/init.d/vmware-wsx-server stop
