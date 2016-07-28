@@ -2,7 +2,7 @@
 
 set timeout 600
 
-spawn /tmp/VMware-WSX-1.0.2-928297.x86_64.bundle
+spawn /tmp/VMware-WSX-1.1.0-1158072.x86_64.bundle
 
 expect "Press Enter to proceed."
 send "\r"
@@ -10,10 +10,6 @@ expect -gl "--More--"
 send "q"
 expect "Do you agree?"
 send "yes\r"
-expect "WSX database"
-send "\r"
-expect "8888"
-send "\r"
 
 expect_after eof exit
 
