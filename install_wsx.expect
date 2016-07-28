@@ -14,6 +14,9 @@ expect "WSX database"
 send "\r"
 expect "8888"
 send "\r"
+
+expect_after eof exit
+
 expect "Press Enter to begin"
 send "\r"
 expect "Installation was successful"
